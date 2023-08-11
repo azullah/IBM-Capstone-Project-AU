@@ -12,7 +12,7 @@ import plotly.graph_objects as go
 pio.renderers.default = "browser"
 
 # Read the airline data into pandas dataframe
-spacex_df = pd.read_csv("spacex_launch_dash.csv")
+spacex_df = pd.read_csv("../data/spacex_launch_dash.csv")
 max_payload = spacex_df['Payload Mass (kg)'].max()
 min_payload = spacex_df['Payload Mass (kg)'].min()
 site_list = spacex_df['Launch Site'].unique()
